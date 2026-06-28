@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>交互作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7f4ec'/%3E%3Ccircle cx='32' cy='32' r='18' fill='%2326221d'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23d89c3f'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="boot" aria-hidden="true">
+    <div class="boot-card">
+      <div class="boot-row">$ load motion-system</div>
+      <div class="boot-row">$ arrange desktop collage</div>
+      <div class="boot-row">$ ready <span class="boot-caret"></span></div>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="#about">作品</a>
+        <a href="#playground">联系方式</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" aria-label="Motion portfolio hero">
+      <div class="stage">
+        <div class="signature">
+          <div class="glare"></div>
+          <h1>作品集</h1>
+          <p>颜思华作品集</p>
+        </div>
+
+        <div class="object badge">
+          <div class="lanyard"></div>
+          <div class="badge-card">
+            <div class="badge-top">
+              <strong>颜思华</strong>
+              <span class="badge-role">UX 设计 / AI 产品实习生</span>
+              <span class="badge-rule"></span>
+              <ul class="badge-details">
+                <li>上海交通大学工业设计硕士在读</li>
+                <li>关注 AI 产品、用户研究、<br>交互原型与轻量开发</li>
+              </ul>
+            </div>
+            <div class="portrait">
+              <img class="portrait-face" src="photo.png" alt="颜思华">
+            </div>
+          </div>
+        </div>
+
+        <div class="object resume-folder" tabindex="0" aria-label="悬停查看颜思华简历，点击放大">
+          <img class="resume-sheet" src="颜思华简历-web.jpg" alt="颜思华简历">
+          <img class="resume-folder-cover" src="ChatGPT_Image_Jun_28__2026__03_44_48_PM-removebg-preview.png" alt="简历文件夹">
+        </div>
+
+        <div class="object folder" aria-label="Folder hover interaction">
+          <svg class="folder-back" viewBox="0 0 96 80" aria-hidden="true">
+            <rect x="0" y="12" width="96" height="68" rx="8"></rect>
+            <path d="M0 20 C0 14.5 4.5 10 10 10 L32 10 Q36 10 38 6 Q40 2 44 2 L86 2 Q94 2 96 10 L96 20 L0 20 Z"></path>
+          </svg>
+          <div class="folder-paper-stack"></div>
+          <div class="folder-item"><img src="codex.png" alt="Codex"></div>
+          <div class="folder-item"><img src="cursor.png" alt="Cursor"></div>
+          <div class="folder-item"><img src="opencode.png" alt="OpenCode"></div>
+          <div class="folder-front"><span>我的AI好伙伴</span></div>
+        </div>
+
+        <div class="object terminal" aria-label="Terminal typewriter">
+          <div class="terminal-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            sihua-zsh
+          </div>
+          <div class="terminal-body" id="terminal"></div>
+        </div>
+
+        <div class="object ipad-hero" aria-hidden="true">
+          <img src="iPad.png" alt="">
+        </div>
+
+        <div class="object desk-paper" aria-label="桌面灵感物件">
+          <img class="desk-paper-sheet" src="yan-ripped-paper.png" alt="">
+          <img class="desk-coffee" src="yan-ice-coffee.png" alt="冰咖啡">
+          <img class="desk-plant" src="yan-plant.png" alt="龟背竹盆栽">
+          <span class="desk-pencil-wrap">
+            <img class="desk-pencil" src="yan-apple-pencil.png" alt="Apple Pencil">
+            <img class="desk-pencil-line" src="yan-hand-drawn-line.svg" alt="">
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="finder-window">
+        <div class="finder-paper-texture" aria-hidden="true"></div>
+        <div class="finder-titlebar">
+          <span class="window-lights"><span></span><span></span><span></span></span>
+          ~/sihua/project
+        </div>
+        <div class="finder-body">
+          <aside class="finder-sidebar" aria-label="Finder favorites">
+            <h3>个人收藏</h3>
+            <div class="finder-nav">
+              <button class="active" type="button" data-view="projects">
+                <svg class="sf-symbol" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3.8 10.9 12 3.7l8.2 7.2"></path>
+                  <path d="M6.2 9.2v9.1c0 1.1.6 1.7 1.7 1.7h8.2c1.1 0 1.7-.6 1.7-1.7V9.2"></path>
+                  <path d="M9.5 20v-5.1c0-.8.4-1.2 1.2-1.2h2.6c.8 0 1.2.4 1.2 1.2V20"></path>
+                </svg>
+                项目
+              </button>
+              <button type="button" data-view="snapshot">
+                <svg class="sf-symbol" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3.7" y="5.2" width="16.6" height="11.3" rx="1.8"></rect>
+                  <path d="M9.2 20h5.6"></path>
+                  <path d="M12 16.6V20"></path>
+                </svg>
+                简历
+              </button>
+              <button type="button" data-view="achievements">
+                <svg class="sf-symbol" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 3.8 2.45 5.05 5.55.78-4 3.9.95 5.5L12 16.45 7.05 19.03l.95-5.5-4-3.9 5.55-.78L12 3.8Z"></path>
+                </svg>
+                成就
+              </button>
+              <button type="button" data-view="garden">
+                <svg class="sf-symbol" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.6 17.7c4.3.2 8.4-2.6 10-6.8.8-2 .9-4.2.5-6.4-2.2.1-4.3.8-6 2.1-3.7 2.8-5.1 7.6-4.5 11.1Z"></path>
+                  <path d="M5.2 20.1c2.4-5.1 6.2-8.1 10.6-10.1"></path>
+                </svg>
+                校园活动
+              </button>
+            </div>
+          </aside>
+
+          <div class="finder-viewport">
+            <section class="finder-view projects-view active" data-view-panel="projects">
+              <div class="finder-grid">
+                <div class="folder-grid" aria-label="Project folders">
+              <button class="project-folder" type="button" data-project="game">
+                <span class="folder-icon" style="--folder:#8EB4CE;--folder-tab:#7EA4BE">
+                  <svg class="folder-shell" viewBox="0 0 96 80" aria-hidden="true"><rect x="0" y="12" width="96" height="68" rx="8"></rect><path d="M0 20 C0 14.5 4.5 10 10 10 L32 10 Q36 10 38 6 Q40 2 44 2 L86 2 Q94 2 96 10 L96 20 L0 20 Z"></path></svg>
+                  <span class="folder-paper"></span><span class="folder-face"><img src="folder-icon-work.svg" alt=""></span>
+                </span>
+                <span class="folder-label">游戏视觉与内容设计</span>
+              </button>
+              <button class="project-folder" type="button" data-project="ai">
+                <span class="folder-icon" style="--folder:#DEBB8E;--folder-tab:#CEAB7E"><svg class="folder-shell" viewBox="0 0 96 80" aria-hidden="true"><rect x="0" y="12" width="96" height="68" rx="8"></rect><path d="M0 20 C0 14.5 4.5 10 10 10 L32 10 Q36 10 38 6 Q40 2 44 2 L86 2 Q94 2 96 10 L96 20 L0 20 Z"></path></svg><span class="folder-paper"></span><span class="folder-face"><img src="folder-icon-ai.svg" alt=""></span></span>
+                <span class="folder-label">AI作品</span>
+              </button>
+              <button class="project-folder" type="button" data-project="video">
+                <span class="folder-icon" style="--folder:#E09D98;--folder-tab:#D08D88"><svg class="folder-shell" viewBox="0 0 96 80" aria-hidden="true"><rect x="0" y="12" width="96" height="68" rx="8"></rect><path d="M0 20 C0 14.5 4.5 10 10 10 L32 10 Q36 10 38 6 Q40 2 44 2 L86 2 Q94 2 96 10 L96 20 L0 20 Z"></path></svg><span class="folder-paper"></span><span class="folder-face"><img src="folder-icon-lens.svg" alt=""></span></span>
+                <span class="folder-label">视频与动态内容</span>
+              </button>
+              <button class="project-folder" type="button" data-project="product">
+                <span class="folder-icon" style="--folder:#B09AD0;--folder-tab:#A08AC0"><svg class="folder-shell" viewBox="0 0 96 80" aria-hidden="true"><rect x="0" y="12" width="96" height="68" rx="8"></rect><path d="M0 20 C0 14.5 4.5 10 10 10 L32 10 Q36 10 38 6 Q40 2 44 2 L86 2 Q94 2 96 10 L96 20 L0 20 Z"></path></svg><span class="folder-paper"></span><span class="folder-face"><img src="folder-icon-sketch.svg" alt=""></span></span>
+                <span class="folder-label">产品设计</span>
+              </button>
+                </div>
+              </div>
+
+              <aside class="finder-detail" aria-live="polite">
+                <button class="detail-close" type="button" aria-label="关闭详情">×</button>
+                <div class="portfolio-detail-content" id="portfolioDetailContent"></div>
+              </aside>
+            </section>
+
+            <section class="finder-view resume-view" data-view-panel="snapshot">
+              <div class="resume-card-grid">
+                <article class="resume-card resume-profile-card">
+                  <p class="resume-card-label">PROFILE / 个人档案</p>
+                  <div class="resume-profile-heading">
+                    <div>
+                      <h2>颜思华 <span>GAN SI HUA</span></h2>
+                      <p class="resume-role">UX 设计 · AI 产品实习生</p>
+                    </div>
+                    <span class="resume-origin">MYS<br><small>马来西亚</small></span>
+                  </div>
+                  <p class="resume-intro">上海交通大学工业设计硕士在读，具备视觉设计、用户研究、AI 产品原型与轻量开发经验。关注 AI 在学习、研究与内容管理等真实场景中的产品化应用。</p>
+                  <div class="resume-contact-list">
+                    <a href="tel:+8616621291317"><span>PHONE / WECHAT</span>166 2129 1317</a>
+                    <a href="mailto:azores_899@sjtu.edu.cn"><span>EMAIL</span>azores_899@sjtu.edu.cn</a>
+                    <p><span>LANGUAGE</span>中文 · English · Bahasa Melayu</p>
+                  </div>
+                </article>
+
+                <article class="resume-card resume-radar-card">
+                  <p class="resume-card-label">CAPABILITY MAP / 能力结构</p>
+                  <svg class="resume-radar" viewBox="0 0 320 270" role="img" aria-labelledby="resumeRadarTitle resumeRadarDesc">
+                    <title id="resumeRadarTitle">颜思华的能力结构图</title>
+                    <desc id="resumeRadarDesc">能力覆盖用户研究、交互设计、视觉表达、AI 产品与协作推进五个方向。</desc>
+                    <g class="radar-grid" aria-hidden="true">
+                      <polygon points="160,48 260,121 222,238 98,238 60,121"></polygon>
+                      <polygon points="160,76 233,129 205,214 115,214 87,129"></polygon>
+                      <polygon points="160,104 206,137 188,189 132,189 114,137"></polygon>
+                      <line x1="160" y1="151" x2="160" y2="48"></line><line x1="160" y1="151" x2="260" y2="121"></line>
+                      <line x1="160" y1="151" x2="222" y2="238"></line><line x1="160" y1="151" x2="98" y2="238"></line><line x1="160" y1="151" x2="60" y2="121"></line>
+                    </g>
+                    <polygon class="radar-shape" points="160,61 238,128 208,218 111,220 76,126"></polygon>
+                    <g class="radar-dots" aria-hidden="true"><circle cx="160" cy="61" r="4"></circle><circle cx="238" cy="128" r="4"></circle><circle cx="208" cy="218" r="4"></circle><circle cx="111" cy="220" r="4"></circle><circle cx="76" cy="126" r="4"></circle></g>
+                    <g class="radar-labels"><text x="160" y="24">用户研究</text><text x="286" y="112">交互设计</text><text x="242" y="260">视觉表达</text><text x="78" y="260">AI 产品</text><text x="34" y="112">协作推进</text></g>
+                  </svg>
+                  <p class="resume-radar-note">研究问题，也把概念做成可以被验证的产品。</p>
+                </article>
+
+                <article class="resume-card resume-education-card">
+                  <p class="resume-card-label">EDUCATION / 教育背景</p>
+                  <div class="resume-timeline">
+                    <section>
+                      <time>2024.09 — 2027.03</time>
+                      <h3>上海交通大学</h3>
+                      <p>工业设计 · 硕士</p>
+                      <div><span>用户体验</span><span>交互设计</span><span>AI 产品</span></div>
+                    </section>
+                    <section>
+                      <time>2020.09 — 2024.06</time>
+                      <h3>上海交通大学</h3>
+                      <p>视觉传达设计 · 本科</p>
+                      <div><span>GPA 3.8</span><span>优秀毕业论文</span></div>
+                    </section>
+                  </div>
+                </article>
+
+                <article class="resume-card resume-skills-card">
+                  <p class="resume-card-label">CORE SKILLS / 核心能力</p>
+                  <div class="resume-skill-groups">
+                    <section><span class="resume-skill-index blue">01</span><div><h3>用户研究与产品分析</h3><p>用户洞察 · 竞品分析 · 需求拆解 · 用户流程 · 信息架构</p></div></section>
+                    <section><span class="resume-skill-index yellow">02</span><div><h3>项目协作与标准化</h3><p>项目推进 · 供应商对接 · 品质监修 · 内容流程 · 视觉规范</p></div></section>
+                    <section><span class="resume-skill-index purple">03</span><div><h3>AI 产品与 Prompt 设计</h3><p>AI 角色设定 · 对话策略 · Human-in-the-loop · MVP 验证</p></div></section>
+                    <section><span class="resume-skill-index red">04</span><div><h3>视觉表达与落地</h3><p>网易、心动游戏实习 · 内容策略 · 跨团队协作 · 高保真原型</p></div></section>
+                  </div>
+                </article>
+
+                <article class="resume-card resume-tools-card">
+                  <p class="resume-card-label">TOOLKIT / 工具清单</p>
+                  <div class="resume-tool-groups">
+                    <section><h3>DESIGN</h3><p><span>Figma</span><span>Photoshop</span><span>Illustrator</span></p></section>
+                    <section><h3>AI &amp; RESEARCH</h3><p><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>DeepSeek</span></p></section>
+                    <section><h3>AIGC</h3><p><span>即梦</span><span>可灵</span><span>Lovart</span><span>Nano Banana</span><span>Seedance</span></p></section>
+                    <section><h3>BUILD</h3><p><span>Cursor</span><span>Codex</span><span>OpenCode</span></p></section>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="finder-view achievements-view" data-view-panel="achievements">
+              <p class="finder-eyebrow">过往经历亮点</p>
+              <div class="impact-grid">
+                <article><strong>1055.8万+</strong><span>B站累计视频播放量</span></article>
+                <article><strong>16条</strong><span>深度参与网易游戏的视频内容 / 封面创意</span></article>
+                <article><strong>10+</strong><span>AI 小型项目与原型尝试</span></article>
+              </div>
+              <p class="finder-eyebrow achievement-heading">竞赛与展览</p>
+              <div class="achievement-list">
+                <article><time>2025</time><div><h3>第十届“中国高校计算机大赛—移动应用创新赛”</h3><p>作品《Whisper》获 B 类三等奖<br><span>国家级</span><span>三等奖</span><span>移动应用创新</span></p></div></article>
+                <article><time>2025</time><div><h3>移动应用创新赛</h3><p>作品《Whisper》获三等奖<br><span>国家级</span><span>三等奖</span><span>产品设计</span></p></div></article>
+                <article><time>2025</time><div><h3>移动应用创新赛 华东赛区</h3><p>作品《Whisper》获一等奖<br><span>省级</span><span>一等奖</span><span>区域赛</span></p></div></article>
+                <article><time>2025</time><div><h3>NCDA 全国高校数字艺术设计大赛</h3><p>作品《Star-ter 智能滑板护具配件产品设计》获二等奖<br><span>省级</span><span>二等奖</span><span>产品设计</span></p></div></article>
+                <article><time>2025</time><div><h3>NCDA 全国高校数字艺术设计大赛</h3><p>作品《直到风吹醒我》获三等奖<br><span>省级</span><span>三等奖</span><span>数字艺术设计</span></p></div></article>
+                <article><time>2025</time><div><h3>“魅力闵行”摄影艺术作品展</h3><p>作品《直到风吹醒我》入选参展<br><span>省级</span><span>参展证</span><span>摄影艺术</span></p></div></article>
+              </div>
+            </section>
+
+            <section class="finder-view garden-view" data-view-panel="garden">
+              <div class="campus-gallery" aria-label="校园经历照片">
+                <button class="campus-photo-button" type="button" aria-label="全屏查看照片">
+                  <img class="campus-photo" alt="" hidden>
+                </button>
+                <button class="campus-arrow campus-prev" type="button" aria-label="上一张照片">‹</button>
+                <button class="campus-arrow campus-next" type="button" aria-label="下一张照片">›</button>
+                <div class="campus-dots" aria-hidden="true"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-title">
+        <h2>作品墙</h2>
+        <p>下面这些卡片可以拖拽。它们用入场偏移、旋转角和 z-index 提升模拟原页面里公告板/作品墙的触感。</p>
+      </div>
+      <div class="board" id="board">
+        <article class="draggable" style="left:8%;top:8%;--r:-5deg">
+          <div class="thumb" style="--a:#5d8fb4;--b:#f1c36c"></div>
+          <div class="card-copy"><strong>搜索工具</strong><span>运营型产品设计与边界场景梳理。</span></div>
+        </article>
+        <article class="draggable" style="left:34%;top:5%;--r:3deg">
+          <div class="thumb" style="--a:#d8756b;--b:#8d78b7"></div>
+          <div class="card-copy"><strong>AI 草图本</strong><span>为模糊的产品想法快速制作原型。</span></div>
+        </article>
+        <article class="draggable" style="left:62%;top:12%;--r:-2deg">
+          <div class="thumb" style="--a:#87a96b;--b:#e8dfd0"></div>
+          <div class="card-copy"><strong>设计系统</strong><span>设计变量、组件与交互状态。</span></div>
+        </article>
+        <article class="draggable" style="left:18%;top:48%;--r:4deg">
+          <div class="thumb" style="--a:#2f2923;--b:#789fbc"></div>
+          <div class="card-copy"><strong>视觉工艺</strong><span>具有表现力的作品集界面瞬间。</span></div>
+        </article>
+        <article class="draggable" style="left:50%;top:52%;--r:-4deg">
+          <div class="thumb" style="--a:#d89c3f;--b:#d8756b"></div>
+          <div class="card-copy"><strong>社区文件</strong><span>公开资源、实验与趣味工具。</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="playground" id="playground">
+      <div class="playground-footer">
+        <section class="contact-strip" aria-label="联系方式">
+          <a class="social-morph" href="https://www.figma.com/@yanliu" target="_blank" rel="noopener noreferrer">
+            <span class="social-morph-text">{Figma}</span>
+            <svg class="social-morph-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.2 2h7.6a3.8 3.8 0 0 1 0 7.6H12V2H8.2a3.8 3.8 0 1 0 0 7.6H12v3.8H8.2a3.8 3.8 0 1 0 0 7.6A3.8 3.8 0 0 0 12 17.2v-3.8h3.8a3.8 3.8 0 1 0 0-7.6"></path></svg>
+          </a>
+          <button class="social-morph social-contact" type="button" data-copy="https://github.com/azores24839" style="--expanded:230px">
+            <span class="social-morph-text">{Github}</span>
+            <span class="social-morph-detail">github.com/azores24839</span>
+          </button>
+          <button class="social-morph social-contact" type="button" data-copy="azores24839zero" style="--expanded:164px">
+            <span class="social-morph-text">{微信}</span><span class="social-morph-detail">azores24839zero</span>
+          </button>
+          <button class="social-morph social-contact" type="button" data-copy="16621291317" style="--expanded:142px">
+            <span class="social-morph-text">{电话}</span><span class="social-morph-detail">16621291317</span>
+          </button>
+          <button class="social-morph social-contact" type="button" data-copy="zoegan1110@gmail.com" style="--expanded:210px">
+            <span class="social-morph-text">{邮箱}</span><span class="social-morph-detail">zoegan1110@gmail.com</span>
+          </button>
+        </section>
+      </div>
+    </section>
+  </main>
+  <div class="resume-lightbox" role="dialog" aria-modal="true" aria-label="颜思华简历预览" hidden>
+    <img src="颜思华简历-web.jpg" alt="颜思华简历放大预览">
+  </div>
+  <div class="campus-lightbox" role="dialog" aria-modal="true" aria-label="校园经历照片全屏预览" hidden>
+    <img alt="">
+  </div>
+  <div class="copy-hint" role="status" aria-live="polite">点击复制</div>
+
+  <script src="portfolio-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
