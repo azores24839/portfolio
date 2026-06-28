@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build, Push and Deploy
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=sha,prefix=
+            type=sha,prefix=,format=short
             type=raw,value=latest
 
       - name: Build and push
@@ -45,3 +45,19 @@ jobs:
             R2_PUBLIC_URL=${{ vars.R2_PUBLIC_URL }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ vars.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ vars.SSH_PORT || '22' }}
+          script: |
+            cd ${{ vars.COMPOSE_DIR }}
+            docker compose pull
+            docker compose up -d
