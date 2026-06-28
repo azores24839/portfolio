@@ -1,0 +1,19 @@
+.DS_Store
+.git
+.env*
+!.env.example
+dist/
+node_modules/
+content/**/media/
+content/campus/photos/
+CJK TC/
+*.gif
+*.jpeg
+*.jpg
+*.mp4
+*.pdf
+*.png
+*.webm
+*.woff
+*.woff2
+*.svg
