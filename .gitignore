@@ -7,19 +7,7 @@
 dist/
 node_modules/
 
-# 大型媒体储存在 Cloudflare R2，不进入 GitHub / Vercel 部署源文件。
-content/**/media/
-content/campus/photos/
+# 字体仍保留在本地；图片、视频和 PDF 由 GitHub / Vercel 直接托管。
 CJK TC/
-*.gif
-*.jpeg
-*.jpg
-*.mp4
-*.pdf
-*.png
-*.webm
 *.woff
 *.woff2
-
-# 这些小型 SVG 由网页源码直接引用，但生产构建会改为 R2 地址。
-*.svg

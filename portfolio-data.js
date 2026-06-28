@@ -406,9 +406,9 @@ window.PORTFOLIO_DATA = {
       "media": [
         {
           "type": "video",
-          "src": "content/projects/video/01-netease-jimeng/media/01-zombie.mp4",
+          "src": "content/projects/video/01-netease-jimeng/media/0628 (1).mp4",
           "alt": "网易互动娱乐｜即梦 AI 视频实验",
-          "name": "01-zombie.mp4"
+          "name": "0628 (1).mp4"
         }
       ]
     },
@@ -425,9 +425,9 @@ window.PORTFOLIO_DATA = {
       "media": [
         {
           "type": "video",
-          "src": "content/projects/video/02-link-rpg-video/media/01-link.mp4",
+          "src": "content/projects/video/02-link-rpg-video/media/0628 (1)(1).mp4",
           "alt": "LINK-RPG｜项目宣传 / 演示视频",
-          "name": "01-link.mp4"
+          "name": "0628 (1)(1).mp4"
         }
       ]
     },
