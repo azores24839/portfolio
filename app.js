@@ -399,47 +399,13 @@
       if (event.key === "Escape" && !resumeLightbox.hidden) closeResumePreview();
     });
 
-    const revealItems = document.querySelectorAll(".finder-window, .draggable");
+    const revealItems = document.querySelectorAll(".finder-window");
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add("visible");
       });
     }, { threshold: 0.18 });
     revealItems.forEach(item => observer.observe(item));
-
-    let z = 10;
-    document.querySelectorAll(".draggable").forEach(card => {
-      let dragging = false;
-      let startX = 0;
-      let startY = 0;
-      let originX = 0;
-      let originY = 0;
-
-      card.addEventListener("pointerdown", event => {
-        if (window.matchMedia("(max-width: 920px)").matches) return;
-        dragging = true;
-        card.setPointerCapture(event.pointerId);
-        card.style.zIndex = ++z;
-        startX = event.clientX;
-        startY = event.clientY;
-        originX = card.offsetLeft;
-        originY = card.offsetTop;
-        card.style.transition = "box-shadow .2s ease";
-      });
-
-      card.addEventListener("pointermove", event => {
-        if (!dragging) return;
-        const x = originX + event.clientX - startX;
-        const y = originY + event.clientY - startY;
-        card.style.left = `${x}px`;
-        card.style.top = `${y}px`;
-      });
-
-      card.addEventListener("pointerup", () => {
-        dragging = false;
-        card.style.transition = "";
-      });
-    });
 
     document.addEventListener("click", event => {
       if (event.target.closest("a, button")) return;

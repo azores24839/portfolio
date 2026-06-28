@@ -339,7 +339,38 @@ window.PORTFOLIO_DATA = {
       "tools": "",
       "keywords": "科研视觉、AI 分类、人工复核、案例管理、数据库、Chrome 插件",
       "bodyHtml": "<h3>项目简介</h3>\n<p>Sci-Viz Case Hub 是一个面向科研视觉案例管理的 AI 视觉案例资产平台，围绕“采集—识别—分类—复核—管理—导出”的流程展开。项目通过 Chrome 插件采集科研视觉素材，并结合 AI 分类与人工复核机制，对案例进行标签化管理，提升视觉案例收集、筛选和归档效率。</p>\n<p>该项目体现了我对 AI 辅助工作流、信息架构、内容管理系统与人机协作流程的探索。</p>",
-      "media": []
+      "media": [
+        {
+          "type": "image",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/01.png",
+          "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
+          "name": "01.png"
+        },
+        {
+          "type": "image",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/02.png",
+          "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
+          "name": "02.png"
+        },
+        {
+          "type": "image",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/03.png",
+          "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
+          "name": "03.png"
+        },
+        {
+          "type": "image",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/04.png",
+          "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
+          "name": "04.png"
+        },
+        {
+          "type": "image",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/05.png",
+          "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
+          "name": "05.png"
+        }
+      ]
     },
     {
       "id": "yunliao-interview",

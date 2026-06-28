@@ -2027,63 +2027,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .board {
-      position: relative;
-      height: max(420px, calc(100svh - 230px));
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background:
-        radial-gradient(circle, rgba(113,105,95,.28) 1px, transparent 1.2px),
-        linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.28));
-      background-size: 22px 22px, auto;
-      overflow: hidden;
-      box-shadow: inset 0 0 80px rgba(93, 76, 50, .06);
-    }
-
-    .draggable {
-      position: absolute;
-      width: 230px;
-      border: 1px solid rgba(80,60,44,.18);
-      border-radius: 9px;
-      background: white;
-      box-shadow: 0 16px 36px rgba(44,36,25,.16);
-      cursor: grab;
-      user-select: none;
-      overflow: hidden;
-      opacity: 0;
-      transform: translateY(80px) rotate(var(--r));
-      transition: opacity .6s var(--ease), transform .6s var(--ease), box-shadow .2s ease;
-    }
-
-    .draggable.visible {
-      opacity: 1;
-      transform: translateY(0) rotate(var(--r));
-    }
-
-    .draggable:active {
-      cursor: grabbing;
-      box-shadow: 0 28px 52px rgba(44,36,25,.24);
-    }
-
-    .thumb {
-      height: 150px;
-      background: linear-gradient(135deg, var(--a), var(--b));
-    }
-
-    .card-copy {
-      padding: 15px;
-    }
-
-    .card-copy strong { display: block; }
-
-    .card-copy span {
-      display: block;
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.45;
-    }
-
     .footer {
       padding: 22px 20px 34px;
       text-align: center;
@@ -2130,13 +2073,11 @@
     }
 
     .social-morph-text,
-    .social-morph-icon,
     .social-morph-detail {
       transition: opacity .4s cubic-bezier(.4,0,.2,1), filter .4s cubic-bezier(.4,0,.2,1), transform .4s cubic-bezier(.4,0,.2,1);
     }
 
     .social-morph-text { display: inline-block; opacity: 1; filter: blur(0); transform: scale(1); }
-    .social-morph-icon,
     .social-morph-detail {
       position: absolute;
       inset: 0;
@@ -2148,11 +2089,9 @@
       transition-delay: .1s;
     }
 
-    .social-morph-icon { width: 17px; height: 17px; fill: currentColor; }
     .social-morph-detail { display: grid; place-items: center; white-space: nowrap; font-size: 12px; color: #292524; }
     .social-contact:hover { width: var(--expanded); }
     .social-morph:hover .social-morph-text { opacity: 0; filter: blur(8px); transform: scale(.6); }
-    .social-morph:hover .social-morph-icon,
     .social-morph:hover .social-morph-detail { opacity: 1; filter: blur(0); transform: scale(1); }
 
     .copy-hint {
@@ -2402,19 +2341,6 @@
         font-size: 15px;
       }
 
-      .board {
-        height: auto;
-        display: grid;
-        gap: 16px;
-        padding: 16px;
-      }
-
-      .draggable {
-        position: relative;
-        left: auto !important;
-        top: auto !important;
-        width: 100%;
-      }
     }
 
     @media (max-width: 520px) {
