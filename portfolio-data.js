@@ -342,33 +342,33 @@ window.PORTFOLIO_DATA = {
       "media": [
         {
           "type": "image",
-          "src": "content/projects/ai/03-sci-viz-case-hub/media/01.png",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/01-a.png",
           "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
-          "name": "01.png"
+          "name": "01-a.png"
         },
         {
           "type": "image",
-          "src": "content/projects/ai/03-sci-viz-case-hub/media/02.png",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/02-a.png",
           "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
-          "name": "02.png"
+          "name": "02-a.png"
         },
         {
           "type": "image",
-          "src": "content/projects/ai/03-sci-viz-case-hub/media/03.png",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/03-a.png",
           "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
-          "name": "03.png"
+          "name": "03-a.png"
         },
         {
           "type": "image",
-          "src": "content/projects/ai/03-sci-viz-case-hub/media/04.png",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/04-a.png",
           "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
-          "name": "04.png"
+          "name": "04-a.png"
         },
         {
           "type": "image",
-          "src": "content/projects/ai/03-sci-viz-case-hub/media/05.png",
+          "src": "content/projects/ai/03-sci-viz-case-hub/media/05-a.png",
           "alt": "Sci-Viz Case Hub｜AI 视觉案例资产管理平台",
-          "name": "05.png"
+          "name": "05-a.png"
         }
       ]
     },
