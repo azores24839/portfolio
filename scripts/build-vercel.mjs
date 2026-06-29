@@ -39,6 +39,10 @@ await Promise.all([
 
 if (!useR2) {
   await cp(path.join(root, "content"), path.join(dist, "content"), { recursive: true });
+  const fontDirectory = path.join("CJK TC");
+  const fontFile = "SweiSpringCJKtc-SemiBold.woff2";
+  await mkdir(path.join(dist, fontDirectory), { recursive: true });
+  await cp(path.join(root, fontDirectory, fontFile), path.join(dist, fontDirectory, fontFile));
   const publicExtensions = new Set([".gif", ".jpeg", ".jpg", ".mp4", ".pdf", ".png", ".svg", ".webm", ".webp"]);
   const rootEntries = await readdir(root, { withFileTypes: true });
   await Promise.all(rootEntries

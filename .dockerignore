@@ -4,6 +4,6 @@
 !.env.example
 dist/
 node_modules/
-CJK TC/
 *.woff
 *.woff2
+!CJK TC/SweiSpringCJKtc-SemiBold.woff2

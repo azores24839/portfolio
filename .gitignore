@@ -7,7 +7,7 @@
 dist/
 node_modules/
 
-# 字体仍保留在本地；图片、视频和 PDF 由 GitHub / Vercel 直接托管。
-CJK TC/
+# 只跟踪网页实际使用的字体，其余字体保留在本地。
 *.woff
 *.woff2
+!CJK TC/SweiSpringCJKtc-SemiBold.woff2
